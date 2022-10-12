@@ -1,6 +1,6 @@
 # README #
 
-Here below the instructions how to execute the solution for the Advent of Code Puzzle 2018/8 - Memory Maneuver made for Sage + Archer.
+Here below the instructions how to execute the solution for the **Advent of Code Puzzle 2018/8 - Memory Maneuver** made for Sage + Archer.
 
 
 ### How to set up ###
@@ -29,11 +29,10 @@ You can skipp the above steps if you are using a code editor like PyCharm
 When you are sure your virtual environment is running you can proceed.
 
 ### How to run the program ###
-Execute the program
+Run the below command and then follow the terminal instruction to find the sum of all metadata entries
 ```
 python3 main.py
 ```
-Then follow the terminal instruction to find the sum of all metadata entries
 
 For running all the tests
 ```
