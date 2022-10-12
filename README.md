@@ -12,11 +12,10 @@ git clone https://github.com/zaFa87/sageArcherCodePuzzle.git
 
 ##### Virtual environment #####
 It is always a good idea to create a virtual environment
-Creates a virtual environment
 ```
 python3 -m venv venv
 ```
-Activates the environment
+Activate the environment
 ```
 source venv/bin/activate
 ```
@@ -24,7 +23,7 @@ When you are done you can deactivate the environment
 ```
 deactivate
 ```
-You can skipp the above steps if you are using a code editor like PyCharm
+You can skip the above steps if you are using a code editor like _PyCharm_
 
 When you are sure your virtual environment is running you can proceed.
 
