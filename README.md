@@ -9,13 +9,13 @@ Here's the code solution for the Advent of Code Puzzle 2018/8 - Memory Maneuver 
 Clone the repository, run
 
 ```
-$ git clone https://github.com/zaFa87/sageArcherCodePuzzle.git
+git clone https://github.com/zaFa87/sageArcherCodePuzzle.git
 ```
 
 Install the reuirements, run
 
 ```
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 For run tests, run
