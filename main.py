@@ -2,7 +2,7 @@
 Assignment from Advent of Code.
 """
 
-# initialise global variable
+# initialise global variable used for holding the list of nodes and the metadata
 child_node_values = []
 
 
@@ -10,11 +10,11 @@ def convert_input_file_to_list(file):
     """Convert the input file string into a list of integer."""
     try:
         converted_file = list(map(int, file.split()))
-        # check if the length of the list
+        # if the file is too short rise an error
         if len(converted_file) <= 2:
             raise SystemExit('An error has occurred, file too short. Please check your input file')
     except ValueError:
-        raise SystemExit('An error has occurred, please check your input file')
+        raise SystemExit('An error has occurred, please check your input file. Did you insert letters in the file?')
 
     return converted_file
 
