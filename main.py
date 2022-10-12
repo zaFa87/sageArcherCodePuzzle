@@ -21,7 +21,6 @@ def convert_input_file_to_list(file):
 
 def generate_node_list(number):
     """Generate the list of nodes with their metadata ."""
-    global child_node_values
 
     # read the number of children and number of metadata
     n_child, n_meta = number[:2]
