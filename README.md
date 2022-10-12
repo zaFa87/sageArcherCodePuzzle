@@ -7,30 +7,16 @@ Here's the code solution for the Advent of Code Puzzle 2018/8 - Memory Maneuver 
 ### How do I get set up? ###
 
 Clone the repository, run
-
 ```
 git clone https://github.com/zaFa87/sageArcherCodePuzzle.git
 ```
 
-Install the reuirements, run
-
+Execute the program, run
 ```
-pip3 install -r requirements.txt
+python3 main.py
 ```
 
 For run tests, run
-
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+```
+python3 -m unittest discover
+```
