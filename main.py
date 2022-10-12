@@ -2,7 +2,7 @@
 Assignment from Advent of Code.
 """
 
-
+# initialise global variable
 child_node_values = []
 
 
@@ -19,8 +19,8 @@ def convert_input_file_to_list(file):
     return converted_file
 
 
-def map_number_list(number):
-    """Create a list with the ."""
+def generate_node_list(number):
+    """Generate the list of nodes with their metadata ."""
     global child_node_values
 
     # read the number of children and number of metadata
@@ -31,7 +31,7 @@ def map_number_list(number):
 
     # if node has children then iterate
     for _ in range(n_child):
-        remaining = map_number_list(remaining)
+        remaining = generate_node_list(remaining)
 
     # append metadata values
     child_node_values.append(remaining[:n_meta])
@@ -50,28 +50,17 @@ def get_sum_metadata():
     return total_metadata
 
 
-def get_number_of_nodes():
-    """Return the total number of nodes in the given file."""
-    return len(child_node_values)
-
-
 def main():
     """Main function."""
-    input_file = input('Enter a valid navigation system license file\n')
+    input_file = input('Enter a valid navigation system license file\n'
+                       'For example 2 3 0 3 10 11 12 1 1 0 1 99 2 1 1 2 should return 138\n')
 
     converted_list = convert_input_file_to_list(input_file)
 
-    map_number_list(converted_list)
+    generate_node_list(converted_list)
 
-    selection = input('Select:\n1) For the sum of all metadata\n2) For the number of nodes in the file\n')
-
-    if selection == '1':
-        print(get_sum_metadata())
-
-    if selection == '2':
-        print(get_number_of_nodes())
+    print(get_sum_metadata())
 
 
 if __name__ == '__main__':
-    # 2 3 0 3 10 11 12 1 1 0 1 99 2 1 1 2
     main()
