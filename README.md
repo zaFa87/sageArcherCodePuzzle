@@ -1,5 +1,3 @@
-# sageArcherCodePuzzle
-
 # README #
 
 Here's the code solution for the Advent of Code Puzzle 2018/8 - Memory Maneuver made for Sage + Archer
@@ -16,7 +14,7 @@ Execute the program, run
 python3 main.py
 ```
 
-For run tests, run
+For tests, run
 ```
 python3 -m unittest discover
 ```
