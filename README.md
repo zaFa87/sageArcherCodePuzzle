@@ -13,6 +13,7 @@ Execute the program, run
 ```
 python3 main.py
 ```
+Then follow the terminal instruction to find the sum of all metadata entries
 
 For tests, run
 ```
